@@ -1,0 +1,39 @@
+<%- include('partials/header') -%>
+
+<h1>How do you feel ?</h1>
+<form action="/compose" method="post">
+    <div class="form-group">
+        <label for="exampleFormControlInput1" >Title</label>
+        <input type="text" 
+            class="form-control form-control-lg" 
+            name="postTitle"
+            id="exampleFormControlInput1"
+            autocomplete="off"
+            required
+            >
+            <!-- placeholder="What describes your day" -->
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">
+            Pour your heart out
+        </label>
+        <textarea 
+            name="postBody" 
+            class="form-control form-control-lg" 
+            id="exampleFormControlTextarea1" 
+            rows="5"
+            autocomplete="off"
+            required></textarea>
+            <!-- placeholder="Pour your heart out . . ." -->
+        <small id="" class="form-text text-muted">
+            Breathe deep when you lose your way, and come back home.
+        </small>
+  
+    </div>
+    
+    <button type="submit" name="button" class="btn btn-outline-success btn-lg">
+        Save & Smile before you sleep
+    </button>
+</form>
+
+<%- include('partials/footer') -%>
